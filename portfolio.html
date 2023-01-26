@@ -11,20 +11,27 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="header-content container">
-        <nav class="header-menu">
-          <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
-          <ul class="menu list">
-            <li class="menu-item"><a href="./index.html" class="menu-link">Studio</a></li>
-            <li class="menu-item active"><a href="./portfolio.html" class="menu-link">Portfolio</a></li>
-            <li class="menu-item"><a href="#" class="menu-link">Contacts</a></li>
-          </ul>
-        </nav>
-        <div class="info-wrapper">
-          <ul class="header-info list">
-            <li class="info-item"><a href="mailto:info@devstudio.com" class="info-link">info@devstudio.com</a></li>
-            <li class="info-item"><a href="tel:+110001111111" class="info-link">+11 (000) 111-11-11</a></li>
-          </ul>
+      <div class="container">
+        <div class="header-content">
+          <nav class="header-menu">
+            <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
+            <ul class="menu list">
+              <li class="menu-item"><a href="./index.html" class="menu-link">Studio</a></li>
+              <li class="menu-item active"><a href="./portfolio.html" class="menu-link">Portfolio</a></li>
+              <li class="menu-item"><a href="#" class="menu-link">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="info-wrapper">
+            <ul class="header-info list">
+              <li class="info-item"><a href="mailto:info@devstudio.com" class="info-link">info@devstudio.com</a></li>
+              <li class="info-item"><a href="tel:+110001111111" class="info-link">+11 (000) 111-11-11</a></li>
+            </ul>
+          </div>
+          <button class="mobile-menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="mobile-menu-icon">
+              <use href="./images/symbol-defs.svg#icon-menu-button"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -246,5 +253,64 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="btn modal-close-btn js-close-menu" type="button">
+        <svg>
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="header-menu-mobile">
+        <ul class="menu list">
+          <li class="menu-item"><a href="./index.html" class="menu-link">Studio</a></li>
+          <li class="menu-item"><a href="./portfolio.html" class="menu-link">Portfolio</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-info-wrepper">
+        <ul class="header-info-mobile list">
+          <li class="info-item"><a href="tel:+110001111111" class="info-link link-phone">+11 (000) 111-11-11</a></li>
+          <li class="info-item"><a href="mailto:info@devstudio.com" class="info-link link-email">info@devstudio.com</a></li>
+        </ul>
+        <div class="header-social-icons">
+          <ul class="social-icons-list list">
+            <li class="social-icons">
+              <a href="#" class="social-link">
+                <svg class="header-social-icon">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icons">
+              <a href="#" class="social-link">
+                <svg class="header-social-icon">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a> 
+            </li>
+            <li class="social-icons">
+              <a href="#" class="social-link">
+                <svg class="header-social-icon">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icons">
+              <a href="#" class="social-link">
+                <svg class="header-social-icon">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script> 
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

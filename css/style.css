@@ -231,24 +231,25 @@ body {
 .mobile-menu {
     position: fixed;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     row-gap: 284px;
     top: 0;
     left: 0;
     right: 0;
     height: 100vh;
+    overflow: auto;
     padding: 80px 40px 40px;
     z-index: 100;
     opacity: 0;
     pointer-events: none;
-    visibility: hidden;
+    box-sizing: border-box;
     transform: translateX(100%);
     transition: var(--theme-trnsition-time) var(--theme-trnsition-cubic);
-    transition-property: transform, opacity, visibility;
+    transition-property: transform, opacity;
 }
 
 .mobile-menu.is-open {
-    visibility: visible;
     background: var(--inverse-text-color);
     transform: translateX(0);
     pointer-events: auto;
@@ -1150,5 +1151,16 @@ form[name="backdrop_form"] .form-btn {
 
     .footer-subscribe .form-btn {
         margin: 0 auto;
+    }
+
+    .portfolio-tabs {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 24px;
+        row-gap: 16px;
+    }
+
+    .tab-item {
+        margin: 0;
     }
 }
