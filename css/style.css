@@ -1192,7 +1192,18 @@ form[name="backdrop_form"] .form-btn {
         max-width: 300px;
     }
 }
-@media screen and (min-width: 429px) {
+
+@media screen and (min-width: 1201px) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .solution {
+            background: url(../images/office-desktop.jpg) no-repeat center;
+        }
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 481px) {
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -1202,10 +1213,13 @@ form[name="backdrop_form"] .form-btn {
     }
 }
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .solution {
-        background: url(../images/office-mobile.jpg) no-repeat center;
+@media (max-width: 480px) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .solution {
+            background: url(../images/office-mobile.jpg) no-repeat center;
+        }
     }
 }
+
