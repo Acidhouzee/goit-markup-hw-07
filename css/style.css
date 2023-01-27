@@ -233,7 +233,6 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    row-gap: 284px;
     top: 0;
     left: 0;
     right: 0;
@@ -270,6 +269,10 @@ body {
 
 .mobile-menu .menu .menu-item + .menu-item {
     margin-top: 40px;
+}
+
+.header-menu-mobile .menu {
+    margin-bottom: 40px;
 }
 
 .info-item .info-link.link-phone {
@@ -1008,7 +1011,7 @@ form[name="backdrop_form"] .form-btn {
     }
 
     .container {
-        width: 736px
+        width: 768px
     }
 
     .header-info {
@@ -1073,6 +1076,10 @@ form[name="backdrop_form"] .form-btn {
     .socials-title {
         line-height: 1.5em;
     }
+
+    .footer-content {
+        max-width: 582px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1132,6 +1139,11 @@ form[name="backdrop_form"] .form-btn {
         flex-basis: 100%;
     }
 
+    .solution {
+        background: url(../images/office-mobile.jpg) no-repeat center;
+        max-width: 428px;
+    }
+
     .footer-info,
     .footer-socials,
     .footer-subscribe {
@@ -1162,5 +1174,38 @@ form[name="backdrop_form"] .form-btn {
 
     .tab-item {
         margin: 0;
+    }
+
+    .modal-backdrop {
+        overflow-y: scroll;
+    }
+
+    .modal-window {
+        top: 20px;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media (max-width: 376px) {
+    .modal-window {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+@media screen and (min-width: 429px) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .solution {
+            background: url(../images/office-tablet.jpg) no-repeat center;
+        }
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .solution {
+        background: url(../images/office-mobile.jpg) no-repeat center;
     }
 }
