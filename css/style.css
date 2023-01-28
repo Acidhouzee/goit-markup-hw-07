@@ -1082,6 +1082,17 @@ form[name="backdrop_form"] .form-btn {
     }
 }
 
+@media (max-width: 900px) {
+    .modal-backdrop {
+        overflow-y: scroll;
+    }
+    
+    .modal-window {
+        top: 20px;
+        transform: translate(-50%, 0);
+    }    
+}
+
 @media (max-width: 767px) {
 
     .container {
@@ -1141,7 +1152,6 @@ form[name="backdrop_form"] .form-btn {
 
     .solution {
         background: url(../images/office-mobile.jpg) no-repeat center;
-        max-width: 428px;
     }
 
     .footer-info,
@@ -1175,15 +1185,6 @@ form[name="backdrop_form"] .form-btn {
     .tab-item {
         margin: 0;
     }
-
-    .modal-backdrop {
-        overflow-y: scroll;
-    }
-
-    .modal-window {
-        top: 20px;
-        transform: translate(-50%, 0);
-    }
 }
 
 @media (max-width: 376px) {
@@ -1198,7 +1199,9 @@ form[name="backdrop_form"] .form-btn {
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .solution {
-            background: url(../images/office-desktop.jpg) no-repeat center;
+            background: url(../images/office-desktop.jpg) center;
+            background-size: cover;
+            max-width: 100%;
         }
     }
 }
